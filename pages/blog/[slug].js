@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { getPostBySlug, getAllPosts } from "../../utils/api";
+import { getPostBySlugFile, getAllPosts } from "../../utils/api";
 import Header from "../../components/Header";
 import ContentSection from "../../components/ContentSection";
 import Footer from "../../components/Footer";
@@ -78,7 +78,7 @@ const BlogPost = ({ post }) => {
 };
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPostBySlugFile(params.slug, [
     "date",
     "slug",
     "preview",
