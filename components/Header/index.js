@@ -22,7 +22,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   };
   return (
     <>
-      {/* <Popover className="block tablet:hidden mt-5">
+      <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
@@ -77,7 +77,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
+                  {/* {showResume && (
                     <Button
                       onClick={() =>
                         window.open("mailto:hello@chetanverma.com")
@@ -85,7 +85,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     >
                       Resume
                     </Button>
-                  )}
+                  )} */}
 
                   <Button onClick={handleEmailClick}>Contact</Button>
                 </div>
@@ -112,7 +112,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             </Popover.Panel>
           </>
         )}
-      </Popover> */}
+      </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
           theme === "light" && "bg-white"
